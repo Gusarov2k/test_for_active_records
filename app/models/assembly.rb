@@ -1,3 +1,4 @@
 class Assembly < ActiveRecord::Base
-	has_and_belongs_to_many :parts
+	has_many :assemblyparts
+	has_many :parts, through: :assemblyparts
 end
