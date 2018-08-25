@@ -32,6 +32,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+gem "haml-rails", "~> 1.0"
+
 group :development do
   gem "better_errors"
   gem "binding_of_caller"
