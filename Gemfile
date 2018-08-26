@@ -35,6 +35,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem "haml-rails", "~> 1.0"
 
 group :development do
+  gem 'hirb', '~> 0.2.4'
   gem "better_errors"
   gem "binding_of_caller"
 end
