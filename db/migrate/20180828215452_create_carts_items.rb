@@ -1,8 +1,9 @@
 class CreateCartsItems < ActiveRecord::Migration
   def self.up
 		create_table :carts_items, id: false do |t|
-		t.references :cart
-		t.references :item
+			t.references :cart
+			t.references :item
+		end
 	end
 
 	add_index :carts_items, [:item_id, :cart_id]
@@ -11,5 +12,4 @@ class CreateCartsItems < ActiveRecord::Migration
 	def self.down
 		drop_table :carts_items
 	end
-
 end
